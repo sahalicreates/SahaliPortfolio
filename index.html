@@ -12,33 +12,76 @@
     <nav id="desktop-nav">
       <div class="logo">Sahali Das</div>
       <div>
-          <ul class="nav-links">
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#Skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#blogs">My Blogs</a></li>
-              <li><a href="#contact"><button>Contact Me</button></a></li>
-            </ul>
-        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blogs">My Blogs</a></li>
+          <li>
+            <a href="#contact"><button>Contact Me</button></a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <!-- HAMBURGER NAVBAR -->
     <nav id="hamburger-nav">
-        <div class="logo">Sahali Das</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
-                <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#blogs" onclick="toggleMenu()">My Blogs</a></li>
-                <li><a href="#contact" onclick="toggleMenu()"><button>Contact Me</button></a></li>
-            </div>
+      <div class="logo">Sahali Das</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-     </nav>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+          <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#blogs" onclick="toggleMenu()">My Blogs</a></li>
+          <li>
+            <a href="#contact" onclick="toggleMenu()"
+              ><button>Contact Me</button></a
+            >
+          </li>
+        </div>
+      </div>
+    </nav>
+    <!-- SECTIONS -->
+     <!-- PROFILE SECTION -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Sahali Das Profile Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I am</p>
+        <h1 class="title">Sahali Das</h1>
+        <p class="section__text__p2">Full-Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/SahaliResume.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div class="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sahali-das-b2107b277'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="location.href='https://github.com/sahalicreates'"
+          />
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
