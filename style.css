@@ -189,14 +189,14 @@ section {
 .section__text__p1 {
   text-align: center;
   font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .section__text__p2 {
   text-align: center;
   font-size: 1.6rem;
   margin-top: 0.3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .title {
@@ -223,7 +223,7 @@ section {
 .btn-container {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .btn {
@@ -236,4 +236,25 @@ section {
 
 .btn-color-1, .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover, .btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1, .btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
 }
